@@ -7,17 +7,24 @@
 }
 
 .calc_text{
-	height: 15vh;
+	height: 10vh;
 }
 
-footer{
+/*footer{
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+}*/
+.left_column{
+	height: 100% !important;
 }
 
 p,
-.category_selectors{
+.category_selectors,
+.add_charge{
 	text-align: center;
-	font-weight: bold;
+}
+
+.navbar-fixed{
+	margin-bottom: 20px;
 }
