@@ -1,22 +1,39 @@
+/* rem = root html font size */
+/* em = relative to the font size of the element */
+/* vh = percentage of the full viewport height */
+/* vw = percentage of the full viewport width */
+/* calc(16px + 0.5vw) */
+
+html,
+body,
+.top_row
+{
+	height: 100%;
+}
+
+.top_row{
+	background-color: white;
+}
+
 .calc_num,
 .calc_delete,
-.money_selectors{
+{
 	font-weight: bold;
 	font-size: 3em;
 	text-align: center;
 }
 
-.calc_text{
-	height: 10vh;
+.category_selectors{
+	font-size: 1rem;
+	border-radius: 1rem;
 }
 
-/*footer{
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-}*/
-.left_column{
-	height: 100% !important;
+.category_containers{
+	border-radius: 1rem;
+}
+
+.calc_text{
+	height: 10vh;
 }
 
 p,
@@ -26,5 +43,11 @@ p,
 }
 
 .navbar-fixed{
-	margin-bottom: 20px;
+	/*margin-bottom: 5vh;*/
 }
+
+.material-icons,
+.dollar_amount {
+    vertical-align:middle;
+}
+

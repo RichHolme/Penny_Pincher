@@ -20,152 +20,131 @@
 
 </head>
 
-<body>
+<body class="blue-grey darken-4">
 
-  <!-- <div class="navbar-fixed">
-    blue-grey darken-3
-    <nav class="white">
+  <div class="navbar-fixed">
+    <nav class="blue-grey darken-4">
       <div class="nav-wrapper">
-        <div class="brand-logo"></div>
+        <div class="brand-logo center">
+        Penny Pincher
+        <i data-target="modal2" class="material-icons">attach_money</i>
+        <i class="material-icons">equalizer</i>
+        </div>
       </div>
     </nav>
-  </div> -->
+  </div>
 
-  <div class="row">
-    <div class="col s2 m2 left_column">
-      <div data-target="modal2" class="modal-trigger right-align">
-        <i class="medium material-icons">attach_money</i>
+  <div class="top_row">
+
+    <div class="row">
+        
+      <div data-target="modal1" data-value="rent" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
+        <!-- <div class="z-depth-1 category_containers"> -->
+          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">44.65</span>
+          <p>Rent</p>
+        <!-- </div> -->
       </div>
-      <div data-target="" class="right-align">
-        <i class="medium material-icons">equalizer</i>
+      <div data-target="modal1" data-value="groceries" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
+        <!-- <div class="z-depth-1 category_containers"> -->
+          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
+          <p>Groceries</p>
+        <!-- </div> -->
       </div>
-      <!-- <footer class="page-footer blue-grey darken-3">
-        <div class="footer-copyright">
-          <div class="container">
-            <div data-target="modal2" class="modal-trigger right-align">
-              <i class="medium material-icons">attach_money</i>
-            </div>
-          </div>
-        </div>
-      </footer> -->
-    </div>
-
-    <div class="col s10 m10">
-
-      <div class="container">
-
-        <div class="row">
-          
-          <div data-target="modal1" data-value="rent" class="category_selectors col s4 m4 z-depth-2 modal-trigger">
-            <i class="large material-icons">home</i>
-            <p>Rent</p>
-          </div>
-          <div data-target="modal1" data-value="groceries" class="category_selectors col s4 m4 z-depth-2 modal-trigger">
-            <i class="large material-icons">local_grocery_store</i>
-            <p>Groceries</p>
-          </div>
-          <div data-target="modal1" data-value="car" class="category_selectors col s4 m4 z-depth-2 modal-trigger">
-            <i class="large material-icons">directions_car</i>
-            <p>Car</p>
-          </div>
-
-        </div>
-        <div class="row">
-
-          <div data-target="modal1" data-value="gas" class="category_selectors col s4 m4 z-depth-2 modal-trigger">
-            <i class="large material-icons">local_gas_station</i>
-            <p>Gas</p>
-          </div>
-          <div data-target="modal1" data-value="credit_card" class="category_selectors col s4 m4 z-depth-2 modal-trigger">
-            <i class="large material-icons">credit_card</i>
-            <p>Credit</p>
-          </div>
-          <div data-target="modal1" data-value="giving" class="category_selectors col s4 m4 z-depth-2 modal-trigger">
-            <i class="large material-icons">card_giftcard</i>
-            <p>Giving</p>
-          </div>
-
-        </div>
-
-        <div id="modal1" class="modal">
-          <div class="modal-content">
-            <div id="calulator">
-
-              <div class="row z-depth-2 grey lighten-4">
-                <div class="col s11 m11 calc_text"></div>
-                <div class="col s1 m1 calc_delete">
-                  <i class="small material-icons">clear</i>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col s4 m4 z-depth-2 calc_num">
-                  1
-                </div>
-                <div class="col s4 m4 z-depth-2 calc_num">
-                  2
-                </div>
-                <div class="col s4 m4 z-depth-2 calc_num">
-                  3
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col s4 m4 z-depth-2 calc_num">
-                  4
-                </div>
-                <div class="col s4 m4 z-depth-2 calc_num">
-                  5
-                </div>
-                <div class="col s4 m4 z-depth-2 calc_num">
-                  6
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col s4 m4 z-depth-2 calc_num">
-                  7
-                </div>
-                <div class="col s4 m4 z-depth-2 calc_num">
-                  8
-                </div>
-                <div class="col s4 m4 z-depth-2 calc_num">
-                  9
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col s4 m4 z-depth-2 calc_num">
-                  0
-                </div>
-                <div class="col s4 m4 z-depth-2 calc_num">
-                  .
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="modal-footer">
-            <i class="medium material-icons modal-close add_amount">add_box</i>
-            <i class="medium material-icons modal-close exit">cancel</i>
-          </div>
-        </div>
-
-        <div id="modal2" class="modal">
-          <div class="modal-content">
-            <div data-value="salary" data-target="modal1" class="row z-depth-2 money_selectors modal-trigger modal-close">Salary</div>
-            <div data-value="side" data-target="modal1" class="row z-depth-2 money_selectors modal-trigger modal-close">Side</div>
-            <div data-value="misc" data-target="modal1" class="row z-depth-2 money_selectors modal-trigger modal-close">Miscellaneous</div>
-          </div>
-          <div class="modal-footer">
-            <i class="medium material-icons modal-close exit">cancel</i>
-          </div>
-        </div>
-
+      <div data-target="modal1" data-value="car" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
+        <!-- <div class="z-depth-1 category_containers"> -->
+          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
+          <p>Car</p>
+        <!-- </div> -->
+      </div>
+      <div data-target="modal1" data-value="gas" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
+        <!-- <div class="z-depth-1 category_containers"> -->
+          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
+          <p>Gas</p>
+        <!-- </div> -->
       </div>
 
     </div>
 
+    <div class="row">
+
+      <div data-target="modal1" data-value="credit_card" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
+        <!-- <div class="z-depth-1 category_containers"> -->
+          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
+          <p>Credit</p>
+        <!-- </div> -->
+      </div>
+      <div data-target="modal1" data-value="giving" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
+        <!-- <div class="z-depth-1 category_containers"> -->
+          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
+          <p>Giving</p>
+        <!-- </div> -->
+      </div>
+
+    </div>
+
+    <!-- <div id="modal1" class="modal">
+      <div class="modal-content">
+        <div id="calulator">
+
+          <div class="row z-depth-2 grey lighten-4">
+            <div class="col s11 m11 calc_text"></div>
+            <div class="col s1 m1 calc_delete">
+              <i class="small material-icons">clear</i>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s4 m4 z-depth-2 calc_num">
+              1
+            </div>
+            <div class="col s4 m4 z-depth-2 calc_num">
+              2
+            </div>
+            <div class="col s4 m4 z-depth-2 calc_num">
+              3
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s4 m4 z-depth-2 calc_num">
+              4
+            </div>
+            <div class="col s4 m4 z-depth-2 calc_num">
+              5
+            </div>
+            <div class="col s4 m4 z-depth-2 calc_num">
+              6
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s4 m4 z-depth-2 calc_num">
+              7
+            </div>
+            <div class="col s4 m4 z-depth-2 calc_num">
+              8
+            </div>
+            <div class="col s4 m4 z-depth-2 calc_num">
+              9
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s4 m4 z-depth-2 calc_num">
+              0
+            </div>
+            <div class="col s4 m4 z-depth-2 calc_num">
+              .
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <i class="medium material-icons modal-close add_amount">add_box</i>
+        <i class="medium material-icons modal-close exit">cancel</i>
+      </div>
+    </div> -->
   </div>
 
   <!-- Firebase -->
