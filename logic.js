@@ -5,14 +5,6 @@ $( document ).ready(function() {
 
 	// Your web app's Firebase configuration
 	var firebaseConfig = {
-
-		apiKey: "AIzaSyCYERmS5Qyxh72ndt3lKMP_1mSlkwf07Z4",
-		authDomain: "penny-pincher-a8241.firebaseapp.com",
-		databaseURL: "https://penny-pincher-a8241.firebaseio.com",
-		projectId: "penny-pincher-a8241",
-		storageBucket: "penny-pincher-a8241.appspot.com",
-		messagingSenderId: "848016728440",
-		appId: "1:848016728440:web:c42b1ffdc82795a3b6e88d"
 		
 	};
 
