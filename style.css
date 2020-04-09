@@ -26,6 +26,9 @@ body,
 .category_selectors{
 	font-size: 1rem;
 	border-radius: 1rem;
+	/*width: 15vw !important;*/
+	/*margin-right: 4vw;*/
+	/*margin-left: 4vw !important;*/
 }
 
 .category_containers{
@@ -49,5 +52,10 @@ p,
 .material-icons,
 .dollar_amount {
     vertical-align:middle;
+}
+
+.row{
+	/*margin-top: 10px !important;
+	margin-bottom: 10px !important;*/
 }
 
