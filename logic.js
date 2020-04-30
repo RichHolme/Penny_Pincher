@@ -3,6 +3,59 @@ $( document ).ready(function() {
  	// TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries 
 
+    let date = new Date();
+
+    date = date.toString().split(' ');
+
+    dateArr = [];
+
+    for(var i =0; i<4; i++){
+    	dateArr.push(date[i]);
+    }
+
+    textArr = [dateArr.join(' '), 'Get Money', 'Cha-Ching'];
+
+    text_index = 0;
+	$('.date_message').text('Welcome to Penny Pincher');
+    
+    function fade_in(){
+
+    	$('.date_message').fadeIn(3000);
+    	setTimeout(function(){ fade_out() }, 10000);
+
+    }
+
+    function fade_out(){
+    	$('.date_message').fadeOut(3000);
+    	setTimeout(function(){ 
+    		fade_in();
+    		if(text_index < 3){
+    			$('.date_message').text(textArr[text_index]);
+    			text_index++;
+    		}else{
+    			text_index = 0;
+				$('.date_message').text(textArr[text_index]);
+				text_index++;
+    		} 
+    	}, 3000);
+    }
+
+    setTimeout(function(){fade_out();}, 10000);
+
+    // need to account for divide by zero error
+    var max_earned = 2700;
+    var spent = 2000;
+
+    var spent_percentage = Math.trunc(spent/max_earned*100);
+
+    console.log(spent_percentage);
+
+    $('#red_bar').width(spent_percentage+"%");
+
+    var left_over_percentage = 100 - spent_percentage;
+
+    $('#green_bar').width(left_over_percentage+"%");
+
 	// Your web app's Firebase configuration
 	var firebaseConfig = {
 		

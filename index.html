@@ -20,170 +20,267 @@
 
 </head>
 
-<body class="blue-grey darken-4">
+<body class="">
 
   <!-- <div class="row"> -->
   <div class="navbar-fixed">
     <nav class="blue-grey darken-4">
       <div class="nav-wrapper">
         <div class="brand-logo center">
-        Penny Pincher
-        <i data-target="modal2" class="material-icons">attach_money</i>
-        <i class="material-icons">equalizer</i>
+        <!-- Penny Pincher -->
+        <!-- <img id="candy" src="./images/candy.png"> -->
+        <!-- <i data-target="modal2" class="material-icons">attach_money</i>
+        <i class="material-icons">equalizer</i> -->
+        <div class="row date_message">
         </div>
       </div>
     </nav>
   </div>
   <!-- </div> -->
 
-  <div class="top_row">
+  <div class="row first_row" >
+    
+    <!-- <div class="row rows_container category_holder"> -->
+    <!-- <div class="col s2 m2 balance_info_container category_holder">
+      <div class="row"></div>
+      <div class="row balance">
+        <div class="category_selectors z-depth-1 col s12 m12">
+            <i class="tiny material-icons">attach_money</i><span class="dollar_amount">$44.65</span>
+            <p>Rent</p>
+        </div>
+      </div>
+      
+    </div> -->
 
-    <div class="row"></div>
+    <!-- <div class="col sm 10 m10"> -->
+      <div class="row row_spacer"></div>
+      <!-- <div class="row icon_container"> -->
 
-    <div class="row">
+      <!-- <div class="row date_message"> -->
+   <!--      <i class="medium material-icons money_symbol">attach_money</i>
+        <i class="medium material-icons">equalizer</i>
         
-      <div data-target="modal1" data-value="rent" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
-        <!-- <div class="z-depth-1 category_containers"> -->
-          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">44.65</span>
-          <p>Rent</p>
-        <!-- </div> -->
-      </div>
-      <div data-target="modal1" data-value="groceries" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
-        <!-- <div class="z-depth-1 category_containers"> -->
-          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
-          <p>Groceries</p>
-        <!-- </div> -->
-      </div>
-      <div data-target="modal1" data-value="car" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
-        <!-- <div class="z-depth-1 category_containers"> -->
-          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
-          <p>Car</p>
-        <!-- </div> -->
-      </div>
-      <div data-target="modal1" data-value="gas" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
-        <!-- <div class="z-depth-1 category_containers"> -->
-          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
-          <p>Gas</p>
-        <!-- </div> -->
+      </div> -->
+
+      <div class="row">
+        <div class="balance_column col s4 m4">
+          <div class="balance_container">
+            <div class="red-text text-darken-4 balance_inner">Spent: -$2000.00</div>
+            <div class="progress_bar">
+              <div id="red_bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="balance_column col s4 m4">
+          <div class="balance_container icon_container">
+            <!-- <div class="balance_inner neg_bal">Balance: $10,000.00</div> -->
+            <i class="medium material-icons money_symbol">attach_money</i>
+            <i class="medium material-icons">equalizer</i>
+          </div>
+        </div>
+        <div class="balance_column col s4 m4">
+          <div class="balance_container">
+            <div class="green-text text-darken-4 balance_inner">Earned: +$2700.00</div>
+            <div class="progress_bar">
+              <div id="green_bar"></div>
+            </div>
+          </div>
+        </div>
       </div>
 
-    </div>
+      <div class="row">
 
-    <div class="row">
+        <div class="row">
+          
+          <div class="col s3 m3"> 
+            <div data-target="modal1" data-value="rent" class=" category_selectors z-depth-1 modal-trigger">
+              <!-- <div class="z-depth-1 category_containers"> -->
+                <!-- <i class="tiny material-icons">attach_money</i> -->
+                <span class="dollar_amount">$1,030.68</span>
+                <p>Rent</p>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="col s3 m3"> 
+            <div data-target="modal1" data-value="groceries" class=" category_selectors z-depth-1 modal-trigger">
+              <!-- <div class="z-depth-1 category_containers"> -->
+                <!-- <i class="tiny material-icons">attach_money</i> -->
+                <span class="dollar_amount">$0</span>
+                <p>Groceries</p>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="col s3 m3">
+            <div data-target="modal1" data-value="car" class=" category_selectors z-depth-1 modal-trigger">
+              <!-- <div class="z-depth-1 category_containers"> -->
+                <!-- <i class="tiny material-icons">attach_money</i> -->
+                <span class="dollar_amount">$0</span>
+                <p>Car</p>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="col s3 m3">
+            <div data-target="modal1" data-value="gas" class=" category_selectors z-depth-1 modal-trigger">
+              <!-- <div class="z-depth-1 category_containers"> -->
+                <!-- <i class="tiny material-icons">attach_money</i> -->
+                <span class="dollar_amount">$0</span>
+                <p>Gas</p>
+              <!-- </div> -->
+            </div>
+          </div>
 
-      <div data-target="modal1" data-value="credit_card" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
-        <!-- <div class="z-depth-1 category_containers"> -->
-          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
-          <p>Credit</p>
-        <!-- </div> -->
-      </div>
-      <div data-target="modal1" data-value="giving" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
-        <!-- <div class="z-depth-1 category_containers"> -->
-          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
-          <p>Giving</p>
-        <!-- </div> -->
-      </div>
-      <div data-target="modal1" data-value="car" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
-        <!-- <div class="z-depth-1 category_containers"> -->
-          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
-          <p>Car</p>
-        <!-- </div> -->
-      </div>
-      <div data-target="modal1" data-value="gas" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
-        <!-- <div class="z-depth-1 category_containers"> -->
-          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
-          <p>Gas</p>
-        <!-- </div> -->
-      </div>
+        </div>
 
-    </div>
+        <div class="row">
 
-    <div class="row">
+          <div class="col s3 m3">     
+            <div data-target="modal1" data-value="credit_card" class=" category_selectors z-depth-1 modal-trigger">
+              <!-- <div class="z-depth-1 category_containers"> -->
+                <!-- <i class="tiny material-icons">attach_money</i> -->
+                <span class="dollar_amount">$0</span>
+                <p>Credit</p>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="col s3 m3"> 
+            <div data-target="modal1" data-value="giving" class="category_selectors z-depth-1 modal-trigger">
+              <!-- <div class="z-depth-1 category_containers"> -->
+                <!-- <i class="tiny material-icons">attach_money</i> -->
+                <span class="dollar_amount">$0</span>
+                <p>Giving</p>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="col s3 m3"> 
+            <div data-target="modal1" data-value="car" class="category_selectors z-depth-1 modal-trigger">
+              <!-- <div class="z-depth-1 category_containers"> -->
+                <!-- <i class="tiny material-icons">attach_money</i> -->
+                <span class="dollar_amount">$0</span>
+                <p>Electric</p>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="col s3 m3"> 
+            <div data-target="modal1" data-value="gas" class="category_selectors z-depth-1 modal-trigger">
+              <!-- <div class="z-depth-1 category_containers"> -->
+                <!-- <i class="tiny material-icons">attach_money</i> -->
+                <span class="dollar_amount">$0</span>
+                <p>Water</p>
+              <!-- </div> -->
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+            
+          <div class="col s3 m3"> 
+            <div data-target="modal1" data-value="rent" class=" category_selectors z-depth-1 modal-trigger">
+              <!-- <div class="z-depth-1 category_containers"> -->
+                <!-- <i class="tiny material-icons">attach_money</i> -->
+                <span class="dollar_amount">$44.65</span>
+                <p>Dog</p>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="col s3 m3"> 
+            <div data-target="modal1" data-value="groceries" class="category_selectors z-depth-1 modal-trigger">
+              <!-- <div class="z-depth-1 category_containers"> -->
+                <!-- <i class="tiny material-icons">attach_money</i> -->
+                <span class="dollar_amount">$0</span>
+                <p>Clothes</p>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="col s3 m3"> 
+            <div data-target="modal1" data-value="car" class="category_selectors z-depth-1 modal-trigger">
+              <!-- <div class="z-depth-1 category_containers"> -->
+                <!-- <i class="tiny material-icons">attach_money</i> -->
+                <span class="dollar_amount">$0</span>
+                <p>Dining</p>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="col s3 m3"> 
+            <div data-target="modal1" data-value="gas" class="category_selectors z-depth-1 modal-trigger">
+              <!-- <div class="z-depth-1 category_containers"> -->
+                <!-- <i class="tiny material-icons">attach_money</i> -->
+                <span class="dollar_amount">$0</span>
+                <p>School</p>
+              <!-- </div> -->
+            </div>
+          </div>
+
+        </div>
+<!-- =============================================================================================================== -->
+
+       <!--  <div class="row">
+            
+          <div class="col s3 m3"> 
+            <div data-target="modal1" data-value="rent" class=" category_selectors z-depth-1 modal-trigger">
+                <span class="dollar_amount">$44.65</span>
+                <p>Rent</p>
         
-      <div data-target="modal1" data-value="rent" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
-        <!-- <div class="z-depth-1 category_containers"> -->
-          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">44.65</span>
-          <p>Rent</p>
-        <!-- </div> -->
-      </div>
-      <div data-target="modal1" data-value="groceries" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
-        <!-- <div class="z-depth-1 category_containers"> -->
-          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
-          <p>Groceries</p>
-        <!-- </div> -->
-      </div>
-      <div data-target="modal1" data-value="car" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
-        <!-- <div class="z-depth-1 category_containers"> -->
-          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
-          <p>Car</p>
-        <!-- </div> -->
-      </div>
-      <div data-target="modal1" data-value="gas" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
-        <!-- <div class="z-depth-1 category_containers"> -->
-          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
-          <p>Gas</p>
-        <!-- </div> -->
-      </div>
-
-    </div>
-
-    <div class="row">
+            </div>
+          </div>
+          <div class="col s3 m3"> 
+            <div data-target="modal1" data-value="groceries" class="category_selectors z-depth-1 modal-trigger">
+                <span class="dollar_amount">$0</span>
+                <p>Groceries</p>
         
-      <div data-target="modal1" data-value="rent" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
-        <!-- <div class="z-depth-1 category_containers"> -->
-          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">44.65</span>
-          <p>Rent</p>
-        <!-- </div> -->
-      </div>
-      <div data-target="modal1" data-value="groceries" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
-        <!-- <div class="z-depth-1 category_containers"> -->
-          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
-          <p>Groceries</p>
-        <!-- </div> -->
-      </div>
-      <div data-target="modal1" data-value="car" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
-        <!-- <div class="z-depth-1 category_containers"> -->
-          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
-          <p>Car</p>
-        <!-- </div> -->
-      </div>
-      <div data-target="modal1" data-value="gas" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
-        <!-- <div class="z-depth-1 category_containers"> -->
-          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
-          <p>Gas</p>
-        <!-- </div> -->
-      </div>
-
-    </div>
-
-    <div class="row">
+            </div>
+          </div>
+          <div class="col s3 m3"> 
+            <div data-target="modal1" data-value="car" class="category_selectors z-depth-1 modal-trigger">
+                <span class="dollar_amount">$0</span>
+                <p>Car</p>
         
-      <div data-target="modal1" data-value="rent" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
-        <!-- <div class="z-depth-1 category_containers"> -->
-          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">44.65</span>
-          <p>Rent</p>
-        <!-- </div> -->
-      </div>
-      <div data-target="modal1" data-value="groceries" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
-        <!-- <div class="z-depth-1 category_containers"> -->
-          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
-          <p>Groceries</p>
-        <!-- </div> -->
-      </div>
-      <div data-target="modal1" data-value="car" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
-        <!-- <div class="z-depth-1 category_containers"> -->
-          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
-          <p>Car</p>
-        <!-- </div> -->
-      </div>
-      <div data-target="modal1" data-value="gas" class="category_selectors z-depth-1 col s3 m3 modal-trigger">
-        <!-- <div class="z-depth-1 category_containers"> -->
-          <i class="tiny material-icons">attach_money</i><span class="dollar_amount">0</span>
-          <p>Gas</p>
-        <!-- </div> -->
-      </div>
+            </div>
+          </div>
+          <div class="col s3 m3"> 
+            <div data-target="modal1" data-value="gas" class="category_selectors z-depth-1 modal-trigger">
+                <span class="dollar_amount">$0</span>
+                <p>Gas</p>
+        
+            </div>
+          </div>
 
-    </div>
+        </div>
+
+        <div class="row">
+            
+          <div class="col s3 m3"> 
+            <div data-target="modal1" data-value="rent" class=" category_selectors z-depth-1 modal-trigger">
+                <span class="dollar_amount">$44.65</span>
+                <p>Rent</p>
+        
+            </div>
+          </div>
+          <div class="col s3 m3"> 
+            <div data-target="modal1" data-value="groceries" class="category_selectors z-depth-1 modal-trigger">
+                <span class="dollar_amount">$0</span>
+                <p>Groceries</p>
+        
+            </div>
+          </div>
+          <div class="col s3 m3"> 
+            <div data-target="modal1" data-value="car" class="category_selectors z-depth-1 modal-trigger">
+                <span class="dollar_amount">$0</span>
+                <p>Car</p>
+        
+            </div>
+          </div>
+          <div class="col s3 m3"> 
+            <div data-target="modal1" data-value="gas" class="category_selectors z-depth-1 modal-trigger">
+                <span class="dollar_amount">$0</span>
+                <p>Gas</p>
+        
+            </div>
+          </div>
+
+        </div>
+      </div> -->
+<!-- =============================================================================================================== -->
 
   </div>
 

@@ -6,12 +6,12 @@
 
 html,
 body,
-.top_row
+.first_row
 {
-	height: 100%;
+	/*height: 100%;*/
 }
 
-.top_row{
+.first_row{
 	background-color: white;
 }
 
@@ -24,15 +24,10 @@ body,
 }
 
 .category_selectors{
-	font-size: 1rem;
-	border-radius: 1rem;
-	/*width: 15vw !important;*/
-	/*margin-right: 4vw;*/
-	/*margin-left: 4vw !important;*/
-}
-
-.category_containers{
-	border-radius: 1rem;
+	font-size:calc(12px + .8vw);
+	/*border-radius: 1rem;*/
+	padding-bottom: .5em;
+	padding-top: .5em;
 }
 
 .calc_text{
@@ -45,17 +40,51 @@ p,
 	text-align: center;
 }
 
-.navbar-fixed{
-	/*margin-bottom: 5vh;*/
+.money_symbol{
+	color: #fdd835;
 }
 
-.material-icons,
-.dollar_amount {
-    vertical-align:middle;
+.balance_column{
+	width: 100%;
 }
 
-.row{
-	/*margin-top: 10px !important;
-	margin-bottom: 10px !important;*/
+.balance_inner{
+	text-align: center;
+	/*color: white;*/
+	padding-top: .5em !important;
+	padding-bottom: .5em !important;
+	padding-right: .5em !important;
+	padding-left: .5em !important;
+	/*border-radius: 1rem;*/
+	font-size:calc(12px + 1vw);
 }
 
+.date_message{
+	text-align: center;
+	font-size:calc(12px + 1.5vw);
+}
+
+.icon_container{
+	text-align: center;
+}
+
+.neg_bal{
+	/*border: solid 3px #b71c1c;*/
+	box-shadow: 0 2px 2px 0 rgba(255,0,0,0.14), 0 3px 1px -2px rgba(255,0,0,0.12), 0 1px 5px 0 rgba(255,0,0,0.2);
+}
+
+.progress_bar{
+	height: 2vh;
+	/*background-color: black;*/
+	border: 1px solid black;
+}
+
+#green_bar{
+	height: 100%;
+	background-color: rgb(27, 94, 32);;
+}
+
+#red_bar{
+	height: 100%;
+	background-color: rgb(183, 28, 28);
+}
